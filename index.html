@@ -1,0 +1,181 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Personal Portfolio</title>
+
+    <!-- Connecting external CSS file -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Navigation Bar -->
+    
+<nav>
+    <h2 class="logo">MyPortfolio</h2>
+
+    <ul>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#education">Education</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#quiz">Quiz</a></li>
+        <li><a href="#contact">Contact</a></li>
+    </ul>
+
+    <!-- Dark/Light Mode Toggle Button -->
+    <button id="theme-toggle">☀️ Light Mode</button>
+</nav>
+
+
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+        <h1>Hello, I'm <span>Prakrity Patel</span></h1>
+
+        <p>
+            I am a Computer Science student passionate about technology,
+            web development, programming and creative projects.
+        </p>
+
+        <a href="#about" class="btn">Explore My Profile</a>
+    </section>
+
+    <!-- About Section -->
+    <section class="about" id="about">
+        <h2 class="section-title">About Me</h2>
+
+        <p>
+            Hello! I am a Computer Science student who enjoys exploring
+            technology, creating websites and learning how software works.
+            I am interested in programming, web development and creative
+            digital projects. My goal is to improve my technical skills
+            and build useful and creative applications.
+        </p>
+    </section>
+
+    <!-- Education Section -->
+    <section id="education">
+        <h2 class="section-title">Education</h2>
+
+        <div class="education-card">
+            <h3>Diploma in Computer Science and Engineering</h3>
+            <p>Amity University / Amity Polytechnic</p>
+            <p>2023 - 2026</p>
+
+            <p>
+                Studied programming, computer fundamentals, data structures,
+                software engineering and web development.
+            </p>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills">
+        <h2 class="section-title">My Skills</h2>
+
+        <div class="skills-container">
+
+            <div class="skill-card">
+                <h3>HTML</h3>
+                <p>Webpage structure</p>
+            </div>
+
+            <div class="skill-card">
+                <h3>CSS</h3>
+                <p>Webpage styling</p>
+            </div>
+
+            <div class="skill-card">
+                <h3>JavaScript</h3>
+                <p>Interactive websites</p>
+            </div>
+
+            <div class="skill-card">
+                <h3>Python</h3>
+                <p>Programming basics</p>
+            </div>
+
+            <div class="skill-card">
+                <h3>C</h3>
+                <p>Programming basics</p>
+            </div>
+
+        </div>
+    </section>
+
+
+<!-- Quiz Section -->
+<section id="quiz">
+    <h2 class="section-title">JavaScript Quiz</h2>
+
+    <form id="quiz-form">
+
+        <div class="quiz-question">
+            <h3>1. What does HTML stand for?</h3>
+            <label><input type="radio" name="q1" value="a"> Hyper Text Markup Language</label>
+            <label><input type="radio" name="q1" value="b"> High Text Machine Language</label>
+            <label><input type="radio" name="q1" value="c"> Hyper Tool Multi Language</label>
+            <label><input type="radio" name="q1" value="d"> Home Text Markup Language</label>
+        </div>
+
+        <div class="quiz-question">
+            <h3>2. Which language is used for styling webpages?</h3>
+            <label><input type="radio" name="q2" value="a"> HTML</label>
+            <label><input type="radio" name="q2" value="b"> CSS</label>
+            <label><input type="radio" name="q2" value="c"> Python</label>
+            <label><input type="radio" name="q2" value="d"> Java</label>
+        </div>
+
+        <div class="quiz-question">
+            <h3>3. Which language makes webpages interactive?</h3>
+            <label><input type="radio" name="q3" value="a"> HTML</label>
+            <label><input type="radio" name="q3" value="b"> CSS</label>
+            <label><input type="radio" name="q3" value="c"> JavaScript</label>
+            <label><input type="radio" name="q3" value="d"> SQL</label>
+        </div>
+
+        <div class="quiz-question">
+            <h3>4. Which tag is used for the largest heading in HTML?</h3>
+            <label><input type="radio" name="q4" value="a"> &lt;h1&gt;</label>
+            <label><input type="radio" name="q4" value="b"> &lt;h6&gt;</label>
+            <label><input type="radio" name="q4" value="c"> &lt;p&gt;</label>
+            <label><input type="radio" name="q4" value="d"> &lt;head&gt;</label>
+        </div>
+
+        <div class="quiz-question">
+            <h3>5. Which HTML tag creates a hyperlink?</h3>
+            <label><input type="radio" name="q5" value="a"> &lt;img&gt;</label>
+            <label><input type="radio" name="q5" value="b"> &lt;a&gt;</label>
+            <label><input type="radio" name="q5" value="c"> &lt;div&gt;</label>
+            <label><input type="radio" name="q5" value="d"> &lt;table&gt;</label>
+        </div>
+
+        <button type="submit" class="btn">Submit Quiz</button>
+
+        <p id="quiz-result"></p>
+
+    </form>
+</section>
+
+
+    <!-- Contact Section -->
+    <section class="contact" id="contact">
+        <h2 class="section-title">Contact Me</h2>
+
+        <p>Thank you for visiting my personal profile website!</p>
+
+        <a href="#home" class="btn">Back to Top</a>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2026 My Personal Portfolio | Created with HTML and CSS</p>
+    </footer>
+
+
+    <script src="script.js"></script>
+
+</body>
+</html>

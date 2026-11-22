@@ -1,0 +1,294 @@
+
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+/* Body */
+body {
+    font-family: Arial, sans-serif;
+    background: #0f172a;
+    color: #f1f5f9;
+    line-height: 1.6;
+}
+
+/* Navigation Bar */
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 8%;
+    background: #111827;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+.logo {
+    color: #a78bfa;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 25px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+nav ul li a:hover {
+    color: #a78bfa;
+}
+
+/* Hero Section */
+.hero {
+    min-height: 85vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 50px 20px;
+}
+
+.hero h1 {
+    font-size: 3rem;
+    margin-bottom: 15px;
+}
+
+.hero h1 span {
+    color: #a78bfa;
+}
+
+.hero p {
+    max-width: 650px;
+    color: #cbd5e1;
+    margin-bottom: 25px;
+}
+
+/* Buttons */
+.btn {
+    display: inline-block;
+    padding: 12px 25px;
+    background: #7c3aed;
+    color: white;
+    text-decoration: none;
+    border-radius: 8px;
+    transition: 0.3s ease;
+}
+
+.btn:hover {
+    background: #a78bfa;
+    transform: translateY(-3px);
+}
+
+/* General Sections */
+section {
+    padding: 70px 8%;
+}
+
+.section-title {
+    text-align: center;
+    font-size: 2rem;
+    margin-bottom: 35px;
+    color: #a78bfa;
+}
+
+/* About Section */
+.about {
+    background: #1e293b;
+    text-align: center;
+}
+
+.about p {
+    max-width: 800px;
+    margin: auto;
+    color: #cbd5e1;
+}
+
+/* Education Card */
+.education-card {
+    background: #1e293b;
+    padding: 25px;
+    border-radius: 12px;
+    max-width: 700px;
+    margin: auto;
+    border: 1px solid #334155;
+    transition: 0.3s ease;
+}
+
+.education-card:hover {
+    transform: translateY(-5px);
+    border-color: #a78bfa;
+}
+
+.education-card h3 {
+    color: #c4b5fd;
+    margin-bottom: 10px;
+}
+
+/* Skills Section */
+.skills-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 20px;
+}
+
+.skill-card {
+    background: #1e293b;
+    padding: 25px;
+    border-radius: 12px;
+    text-align: center;
+    border: 1px solid #334155;
+    transition: 0.3s ease;
+}
+
+.skill-card h3 {
+    color: #c4b5fd;
+    margin-bottom: 8px;
+}
+
+/* Skill Hover Effects */
+.skill-card:hover {
+    transform: translateY(-8px) scale(1.03);
+    background: #312e81;
+    border-color: #a78bfa;
+    box-shadow: 0 8px 20px rgba(124, 58, 237, 0.2);
+}
+
+/* Contact Section */
+.contact {
+    background: #1e293b;
+    text-align: center;
+}
+
+.contact p {
+    margin-bottom: 20px;
+    color: #cbd5e1;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 20px;
+    background: #111827;
+    color: #94a3b8;
+}
+
+/* Responsive Design for Mobile */
+@media (max-width: 600px) {
+    nav {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    nav ul {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 15px;
+    }
+
+    .hero h1 {
+        font-size: 2rem;
+    }
+
+    section {
+        padding: 50px 6%;
+    }
+}
+
+/* Dark/Light Mode Toggle Button */
+#theme-toggle {
+    background: #7c3aed;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 14px;
+    transition: 0.3s ease;
+}
+
+#theme-toggle:hover {
+    background: #a78bfa;
+    transform: translateY(-2px);
+}
+
+/* Light Mode Styling */
+body.light-mode {
+    background: #f1f5f9;
+    color: #1e293b;
+}
+
+body.light-mode nav,
+body.light-mode footer {
+    background: #e2e8f0;
+}
+
+body.light-mode nav ul li a {
+    color: #1e293b;
+}
+
+body.light-mode .about,
+body.light-mode .contact,
+body.light-mode .education-card,
+body.light-mode .skill-card {
+    background: #ffffff;
+    color: #1e293b;
+}
+
+body.light-mode .hero p,
+body.light-mode .about p,
+body.light-mode .contact p {
+    color: #475569;
+}
+
+
+/* Quiz Styling */
+
+#quiz {
+    background: #0f172a;
+}
+
+.quiz-question {
+    background: #1e293b;
+    padding: 20px;
+    margin: 20px auto;
+    max-width: 750px;
+    border-radius: 12px;
+    border: 1px solid #334155;
+    transition: 0.3s;
+}
+
+.quiz-question:hover {
+    border-color: #a78bfa;
+    transform: translateY(-3px);
+}
+
+.quiz-question h3 {
+    color: #c4b5fd;
+    margin-bottom: 15px;
+}
+
+.quiz-question label {
+    display: block;
+    margin: 10px 0;
+    cursor: pointer;
+}
+
+.quiz-question input {
+    margin-right: 8px;
+}
+
+#quiz-result {
+    margin-top: 20px;
+    text-align: center;
+    font-weight: bold;
+}
